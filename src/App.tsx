@@ -9,6 +9,7 @@ import PublicLayout from './Layouts/PublicLayout'
 import AdminLayout from './Layouts/AdminLayout'
 import Messages from './Admin/Messages/Messages'
 import { Route, Routes } from 'react-router-dom'
+import ScrollToTop from "./Components/ScrolltoTop";
 
 const Products = () => <div>Products</div>
 const Quotations = () => <div>Quotations</div>
@@ -18,6 +19,8 @@ function App() {
 
   return (
     <div className="App">
+
+      <ScrollToTop />
 
       <Routes>
 
