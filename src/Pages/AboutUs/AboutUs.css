@@ -1,0 +1,310 @@
+.S-Img{
+    width: 100%;
+    height: 460px;
+    object-fit: cover;
+    inset: 0;
+    background: rgba(0,0,0,.45);
+}
+
+.aboutus{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.about-element{
+    position: relative;
+}
+
+.about-text{
+    position: absolute;
+    top: 20%;
+    right: 1%;
+    transform: translateY(-40);
+    text-align: left;
+    color:  white;
+    font-size: 90px;
+    font-weight:800;
+    line-height:90px;
+}
+.comp-name{
+    color: #f7a90f;
+    font-size: 90px;
+}
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.about-hero{
+    position: relative;
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+}
+
+.about-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.45);
+}
+
+.about-content{
+    position: absolute;
+    top: 50%;
+    right: 8%;
+    transform: translateY(-50%);
+    width: 520px;
+    text-align: right;
+    color: white;
+    z-index: 2;
+}
+
+.about-content h3{
+    color: #FFD700;
+    font-size: 22px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.about-content h1{
+    font-size: 80px;
+    line-height: 85px;
+    margin-bottom: 25px;
+}
+
+.about-content p{
+    font-size: 22px;
+    line-height: 35px;
+    margin-bottom: 35px;
+}
+
+.about-content button{
+    padding: 16px 40px;
+    border: none;
+    border-radius: 10px;
+    background: #FFD700;
+    color: #02235F;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.about-content button:hover{
+    background: white;
+    transform: translateY(-3px);
+}
+
+
+
+/* ===========================
+   GENERAL SECTION
+=========================== */
+
+.about-section{
+    width: 90%;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.about-section h2{
+    text-align: center;
+    font-size: 42px;
+    color: #02235F;
+    margin-bottom: 40px;
+}
+
+.about-section p{
+    font-size: 18px;
+    line-height: 32px;
+    color: #555;
+}
+
+
+
+/* ===========================
+   MISSION VISION VALUES
+=========================== */
+
+.mission-section{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.mission-card{
+    flex: 1;
+    min-width: 320px;
+    background: white;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.12);
+    transition: .4s;
+}
+
+.mission-card:hover{
+    transform: translateY(-10px);
+}
+
+.mission-card h2{
+    color: #02235F;
+    margin-bottom: 25px;
+}
+
+.mission-card p{
+    color: #555;
+}
+
+.mission-card ul{
+    padding-left: 20px;
+}
+
+.mission-card li{
+    margin-bottom: 15px;
+}
+
+
+
+/* ===========================
+   WHY CHOOSE US
+=========================== */
+
+.choose-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+.choose-card{
+    background: #02235F;
+    color: white;
+    padding: 35px;
+    border-radius: 18px;
+    text-align: center;
+    font-size: 20px;
+    transition: .4s;
+}
+
+.choose-card:hover{
+    background: /*#FFD700*/ #f7a90f;
+    color: #02235F;
+    transform: scale(1.05);
+}
+
+
+
+/* ===========================
+   EXPERTISE
+=========================== */
+
+.expertise-grid{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.expertise-card{
+    flex: 1;
+    min-width: 320px;
+    background: #F8F9FA;
+    padding: 40px;
+    border-radius: 18px;
+    transition: .4s;
+    box-shadow: 0 8px 20px rgba(0,0,0,.1);
+}
+
+.expertise-card:hover{
+    transform: translateY(-10px);
+}
+
+.expertise-card h3{
+    color: #02235F;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.expertise-card ul{
+    padding-left: 20px;
+}
+
+.expertise-card li{
+    margin-bottom: 15px;
+    color: #555;
+}
+
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+    .about-content{
+        width: 90%;
+        right: 5%;
+    }
+
+    .about-content h1{
+        font-size: 55px;
+        line-height: 60px;
+    }
+
+    .about-content p{
+        font-size: 18px;
+    }
+
+    .choose-grid{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* ===========================
+   PARTNERS
+=========================== */
+
+.partners-grid{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    margin-top:40px;
+}
+
+.partner-card{
+
+    background:white;
+
+    padding:25px 35px;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+
+    transition:.3s;
+
+    font-weight:600;
+
+    color:#02235F;
+
+}
+
+.partner-card:hover{
+
+    background:#FFD700;
+
+    transform:translateY(-8px);
+
+}

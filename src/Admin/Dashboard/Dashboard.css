@@ -1,0 +1,63 @@
+*{
+    box-sizing:border-box;
+}
+
+/* Main */
+
+.dashboard-header{
+
+    margin-bottom:40px;
+
+}
+
+.dashboard-header h1{
+
+    color:#0B4F6C;
+
+}
+
+.dashboard-header p{
+
+    color:#666;
+
+}
+
+/* Cards */
+
+.cards{
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+.card{
+
+    flex:1;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.card h2{
+
+    color:#F4B400;
+
+    font-size:40px;
+
+}
+
+.card p{
+
+    color:#555;
+
+}

@@ -1,0 +1,30 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 30px;
+    width: 100%;
+    background-color: /*rgb(164, 253, 164)*/white;
+
+    /*header stay at the top */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 28px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-image {
+    height: 100px;
+    width: 150px;
+}
