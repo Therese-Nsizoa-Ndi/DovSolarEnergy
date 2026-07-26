@@ -1,20 +1,24 @@
-import Navbar from '../Navbar/Navbar';
-import logo from '../../assets/logo.png';
-import './Header.css';
+import { Link } from "react-router-dom";
+import Navbar from "../Navbar/Navbar";
+import logo from "../../assets/logo.png";
+import "./Header.css";
 
 function Header() {
   return (
     <header className="header">
-      {/*left side*/}
-      <a href="/Home" className="logo">
-        <img src={logo} alt="Solar Logo" className="logo-image" />
+      {/* Left side */}
+      <Link to="/" className="logo">
+        <img
+          src={logo}
+          alt="Dov Solar Energy Logo"
+          className="logo-image"
+        />
 
         <p className="logo-text">Dov Solar Energy</p>
-      </a>
+      </Link>
 
-      {/*right side*/}
-      <Navbar/>
-
+      {/* Right side */}
+      <Navbar />
     </header>
   );
 }

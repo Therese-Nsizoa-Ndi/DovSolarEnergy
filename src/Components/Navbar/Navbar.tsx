@@ -1,27 +1,28 @@
-import './Navbar.css';
-import { FaSearch } from 'react-icons/fa';
+import "./Navbar.css";
+import { Link } from "react-router-dom";
+import { FaSearch } from "react-icons/fa";
 
-function Navbar() { 
- return (
-    <>  
-        <nav className="navbar">
-            <a href="/Home" >Home</a>
-            <a href="/AboutUs" >About Us</a>  
-             <a href="/Achievements" >Our Achievements</a>       
-            <a href="/Services" >Services</a>
-           {/* <a href="/ProductsCatalog" >Products Catalog</a>*/}
-            <a href="/Contact" >Contact</a>
-        </nav>
+function Navbar() {
+  return (
+    <>
+      <nav className="navbar">
+        <Link to="/">Home</Link>
+        <Link to="/AboutUs">About</Link>
+        <Link to="/Achievements">Achievements</Link>
+        <Link to="/Services">Services</Link>
+        {/* <Link to="/ProductsCatalog">Products Catalog</Link> */}
+        <Link to="/Contact">Contact</Link>
+      </nav>
 
-       {/* <div className="buttons">
-            <button className="search-button">
-                <FaSearch/>
-            </button>
-        </div>*/}
-
-
+      {/*
+      <div className="buttons">
+        <button className="search-button">
+          <FaSearch />
+        </button>
+      </div>
+      */}
     </>
-    );
+  );
 }
 
 export default Navbar;
